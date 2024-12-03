@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+.login_wrap{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.login_form{
+    padding: 30px 30px;
+    width:420px;
+    color: #333;
+}
+
+.login_form h1{
+    font-size: 36px;
+}
+
+.login_form .input_area{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input_area input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 4px solid rgba(51, 51, 51, 0.2);
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    padding: 20px 45px 20px 20px;
+}
+
+.input_area input::placeholder{
+    color: #333;
+}
+
+.input_area label i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.caption{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: -15px 0 15px;
+    padding: 10px 10px;
+}
+
+.caption label input{
+    accent-color: #333;
+    margin-right: 3px;
+}
+
+.caption a{
+    color: #333;
+    text-decoration: none;
+}
+
+.caption a:hover{
+    text-decoration: underline;
+}
+
+.button_area button{
+    width: 100%;
+    height: 45px;
+    border: none;
+    background: #e88e09;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}

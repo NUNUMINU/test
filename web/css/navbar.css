@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+*{
+    font-family: 'Noto Sans KR', "Poppins", sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    padding: 0.4rem 2rem;
+}
+
+.navbar__logo{
+    flex-grow:2;
+    height: 50px;
+    margin-left: 15px;
+}
+
+.navbar__menu{
+    flex-grow:1;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar__menu li{
+    margin-left: 10px;
+    padding:0.3em 0.8em;
+    font-size: 1.40rem;
+    font-weight: 600;
+}
+
+.navbar__menu li > a:hover{
+    color: #e88e09;
+}
+
+.navbar__icon{
+    display: flex;
+    list-style: none;
+}
+
+.navbar__icon  a > i{
+    color: white;
+    padding:0.3em 0;
+    font-size: 1.40rem;
+    margin-right: 2.0em;
+    margin-left: 0;
+}
+
+.navbar__icon  a > i:hover{
+    color: #e88e09;
+}
+
+.navbar__toggleBtn > i{
+    display: none;
+    position: absolute;
+    left: 2rem;
+    top: 1.35rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+@media screen and (max-width: 930px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    .navbar__logo{
+        padding: 5px;
+    }
+
+    .navbar__menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+        width: 100%;
+    }
+    .navbar__menu li > a{
+        font-size: 2.5rem;
+        font-weight: normal;
+    }
+
+    .navbar__icon{
+        display: none;
+        margin: 0;
+        padding: 0;
+        background-color: #e88e09;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar__icon  a > i{
+        font-size: 2.5rem;
+        margin-left: 3px;
+        margin-right: 1em;
+        padding:0.3em 0;
+    }
+
+    .navbar__icon  a > i:hover{
+        color: black;
+    }
+
+    .navbar__toggleBtn > i{
+        display: block;
+    }
+
+    .navbar__menu.active,
+    .navbar__icon.active{
+        display: flex;
+    }
+}

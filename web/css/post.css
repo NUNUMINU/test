@@ -1,0 +1,91 @@
+.wrapper{
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    margin: 4rem 0 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.board{
+    padding-bottom: 3rem;
+}
+
+.petition_form{
+    margin: 0 3%;
+}
+
+.write_area{
+    border-top: 2px solid #333;
+    width: 100%;
+    margin: 0;
+}
+
+table{
+    border-spacing: 0;
+    border: 0 none;
+    word-wrap: break-word;
+    border-collapse: collapse;
+}
+
+.write_area th {
+    background: #f1f1f1;
+    border-bottom: 1px dashed #ddd;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.write_area td{
+    border-bottom: 1px dashed #ddd;
+    text-align: left;
+    padding: 10px 15px;
+}
+
+.write_area td select{
+    width: 99%;
+    border: 1px solid #d7d7d7;
+    text-align: left;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+}
+
+.write_area td input{
+    font-size: 1.2rem;
+    width: 95%;
+    border: 1px solid #d7d7d7;
+    padding: 8px 10px;
+}
+
+.write_area td textarea{
+    font-size: 1.2rem;
+    width: 95%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #bdbdbd;
+    resize: none;
+}
+
+.btn_area{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_area .sub{
+    padding: 10px 20px;
+    background-color: #e88e09;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    margin-right: 3px;
+}
+
+.btn_area .cancel{
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 3px;
+}
